@@ -1,0 +1,218 @@
+/* Tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+/* cores */
+:root{
+    --bg-c1: #EBEEFF;
+    --bg-c2: #AE9CD1;
+    --bg-c3: #8C52FF;
+    --bg-c4: #643bb6;
+    --bg-c5: #121212;
+}
+
+/* //////////////////////////////////////////// */
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* //////////////////////////////////////////// */
+/* titulo */
+body{
+    background: linear-gradient(5deg, #AE9CD1,#8C52FF, #643bb6);
+    background-repeat: no-repeat;
+    justify-content: center; 
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* //////////////////////////////////////////// */
+/* container */
+.container {
+    background: linear-gradient(5deg ,#AE9CD1);
+    position: relative;
+    max-width: 100rem;
+    min-height: 46vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 9px;
+}
+
+/* //////////////////////////////////////////// */
+/* titulo e subtitulo (p) */
+#title{
+    color: var(--bg-c1); 
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+p{
+    color: var(--bg-c1);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 0.285rem;
+}
+
+/* //////////////////////////////////////////// */
+/* forms */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form{
+    width: 45%;
+    align-items: center;
+    justify-content: center;
+    max-width: 820px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgb(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* //////////////////////////////////////////// */
+/* inputs */
+.input{
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--bg-c1);
+    background: none;
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.input{
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: .3s;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-field{
+    position: relative;
+    padding: 0.5rem;
+}
+
+.input-field input::placeholder{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.input-field:last-child{
+    margin-bottom: 1.5rem;
+}
+
+
+/*borda*/
+.input-field input{
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+/* //////////////////////////////////////////// */
+/* buttons  */
+.btn{
+    padding: 0.6rem 1.3rem;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: #55668d;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+    margin: 0;
+}
+
+.btn{
+    margin-top: 0.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+
+/* //////////////////////////////////////////// */
+/* medidas  */
+@media (max-width: 480px){
+    .container{
+        padding: 1.5rem;
+    }
+
+    .container::before{
+        top: -13px;
+        left: initial;
+        right: 70px;
+    }
+
+    form{
+        padding: 1.7rem 1.6rem;
+    }
+
+    #subtitle{
+        font-size: 1.15rem;
+    }
+
+    .input{
+        padding: 0.45rem 1.2rem;
+    }
+
+    .btn{
+        padding: 0.45rem 1.2rem;
+    }
+}
+
+
+@media(max-width: 850px){
+    .form{
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
